@@ -1,29 +1,15 @@
 :root {
   --color-white: #f3f3f3;
-  --color-darkblue: #1b1b32;
+  --color-black: color: #333;
+  --color-background: #eee;
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: #37af65;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--color-white);
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  background: var(--color-darkblue);
-  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7)),
-    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-black);
 }
 
 h1,
@@ -32,12 +18,75 @@ h3,
 h4,
 h5,
 h5,
-p {
+p,
+figure {
   margin: 0;
 }
 
-.container {
-  width: 720px;
-  margin: 0 auto;
-  padding: 30px 40px;
+img {
+  display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+main {
+  background-color: var(--color-background);
+  text-align: center;
+  border-radius: 5px;
+  margin: 10px 30px;
+  padding: 40px 20px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.page-title {
+  margin-bottom: 15px;
+}
+
+.page-subtitle  {
+  margin-bottom: 15px;
+}
+
+
+
+figure {
+  background-color: #ffffff;
+  padding: 10px;
+}
+
+.tribute-info {
+  padding-top: 20px;
+}
+
+.tribute-info h2 {
+  margin-bottom: 15px;
+}
+
+.time-list {
+  max-width: 550px;
+  margin: 10px auto;
+}
+
+
+.time-list > li {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+blockquote {
+  font-style: italic;
+  max-width: 550px;
+  margin: 10px auto;
+}
+
+blockquote p {
+  margin-bottom: 20px;
+}
+
+blockquote div {
+  text-align: left;
 }
